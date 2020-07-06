@@ -12,6 +12,10 @@ class Graph constructor(product: IProductElementsList) {
         val resultList = arrayListOf<BaseElement>()
         val list = element.getProductElements()
 
+        if (list.listOfOAssemblies.isEmpty() && list.listOfOAssemblies.isEmpty()) {
+            resultList.addAll(list.listOfObjects)
+        }
+
         for (item in list.listOfOAssemblies) {
             println(item.name)
             item.parent = element as BaseElement

@@ -5,8 +5,12 @@ public class Main {
         Product product = new Product("root");
         // --- 1 уровень 1 индекс
         AssemblyElement assemblyElement11 = new AssemblyElement("11");
+        assemblyElement11.getProductElements().getListOfObjects().add(new ObjectElement("temp1"));
+        assemblyElement11.getProductElements().getListOfObjects().add(new ObjectElement("temp2"));
+        assemblyElement11.getProductElements().getListOfObjects().add(new ObjectElement("temp3"));
+        //assemblyElement11.getProductElements().getListOfOAssemblies().add(new AssemblyElement("temp4"));
 
-        BlockElement blockElement21 = new BlockElement("21");
+       /* BlockElement blockElement21 = new BlockElement("21");
         ObjectElement objectElement22 = new ObjectElement("22");
 
         ObjectElement objectElement31 = new ObjectElement("31");
@@ -18,7 +22,7 @@ public class Main {
         blockElement21.getProductElements().getListOfOAssemblies().add(assemblyElement33);
 
         assemblyElement11.getProductElements().getListOfBlocks().add(blockElement21);
-        assemblyElement11.getProductElements().getListOfObjects().add(objectElement22);
+        assemblyElement11.getProductElements().getListOfObjects().add(objectElement22);*/
 
         product.getProductElements().getListOfOAssemblies().add(assemblyElement11);
 
